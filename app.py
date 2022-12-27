@@ -4,7 +4,7 @@ import malaya
 import pandas as pd
 import re
 import string
-bm_dict_df = pd.read_csv('BM dict.csv')
+bm_dict_df = pd.read_csv('BM_dict.csv')
 bm_dict_df = bm_dict_df.reset_index(drop=True)
 corrector = malaya.spelling_correction.probability.load()
 normalizer = malaya.normalize.normalizer(corrector)
